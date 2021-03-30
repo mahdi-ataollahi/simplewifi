@@ -18,7 +18,39 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+	  <None Remove="EapUserXML\EAP-MS-CHAPv2.xml" />
+	  <None Remove="EapUserXML\EAP-TLS.xml" />
+	  <None Remove="EapUserXML\PEAP-MS-CHAPv2.xml" />
+	  <None Remove="EapUserXML\PEAP-TLS.xml" />
+	  <None Remove="EapUserXML\SDK.xml" />
+	  <None Remove="ProfileXML\OPEN.xml" />
+	  <None Remove="ProfileXML\WEP.xml" />
+	  <None Remove="ProfileXML\WPA-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <None Remove="ProfileXML\WPA-Enterprise-TLS.xml" />
+	  <None Remove="ProfileXML\WPA-PSK.xml" />
+	  <None Remove="ProfileXML\WPA2-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <None Remove="ProfileXML\WPA2-Enterprise-TLS.xml" />
+	  <None Remove="ProfileXML\WPA2-PSK.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="EapUserXML\EAP-MS-CHAPv2.xml" />
+	  <EmbeddedResource Include="EapUserXML\EAP-TLS.xml" />
+	  <EmbeddedResource Include="EapUserXML\PEAP-MS-CHAPv2.xml" />
+	  <EmbeddedResource Include="EapUserXML\PEAP-TLS.xml" />
+	  <EmbeddedResource Include="EapUserXML\SDK.xml" />
+	  <EmbeddedResource Include="ProfileXML\OPEN.xml" />
+	  <EmbeddedResource Include="ProfileXML\WEP.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA-Enterprise-TLS.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA-PSK.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA2-Enterprise-PEAP-MSCHAPv2.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA2-Enterprise-TLS.xml" />
+	  <EmbeddedResource Include="ProfileXML\WPA2-PSK.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
 	</ItemGroup>
 
 </Project>
