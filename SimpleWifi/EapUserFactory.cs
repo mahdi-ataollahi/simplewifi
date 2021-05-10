@@ -42,7 +42,7 @@ namespace SimpleWifi
 		{
 			string resourceName = string.Format("SimpleWifi.EapUserXML.{0}.xml", name);
 
-			using (StreamReader reader = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName)))
+			using (StreamReader reader = new StreamReader(Assembly.GetAssembly(typeof(Wifi)).GetManifestResourceStream(resourceName)))
 			{
 				return reader.ReadToEnd();
 			}
